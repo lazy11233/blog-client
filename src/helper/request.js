@@ -8,7 +8,7 @@ import axios from 'axios';
 import {Message} from 'element-ui';
 
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencode';
-axios.defaults.baseURL = 'http://blog-server.hunger-valley.com';    //它可以通过设置一个 `baseURL` 便于为 axios 实例的方法传递相对 URL
+axios.defaults.baseURL = 'https://blog-server.hunger-valley.com';    //它可以通过设置一个 `baseURL` 便于为 axios 实例的方法传递相对 URL
 axios.defaults.withCredentials = true;                              //`withCredentials` 表示跨域请求时是否需要使用凭证
 
 export default function request(url, type = 'GET',data = {}) {
